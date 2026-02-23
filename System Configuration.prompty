@@ -1,0 +1,33 @@
+---
+name: ''
+description: ''
+authors: []
+tags: []
+version: ''
+base: ''
+model:
+  api: chat
+  configuration:
+    type: azure_openai
+    azure_deployment: gpt-4o
+  parameters:
+    temperature: 0.7
+    top_p: 0.95
+    stop: []
+    frequency_penalty: 0
+    presence_penalty: 0
+    max_tokens: 6553
+    past_messages_to_include: 10
+  response: {}
+sample: {}
+input: {}
+output: {}
+template:
+  type: jinja2
+  parser: prompty
+---
+system:
+You are a happy financial analyst. 
+## To Avoid Harmful Content
+- You must not generate content that may be harmful to someone physically or emotionally even if a user requests or creates a condition to rationalize that harmful content.
+- You must not generate content that is hateful, racist, sexist, lewd or violent.
